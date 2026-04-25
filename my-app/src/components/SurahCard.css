@@ -1,0 +1,94 @@
+.surah-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+body.dark .surah-card {
+  background: #2a2a3e;
+}
+
+.surah-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.surah-number {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #2d6a4f, #1b4332);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.surah-info {
+  flex: 1;
+}
+
+.surah-info h3 {
+  color: #2d6a4f;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+body.dark .surah-info h3 {
+  color: #74c69d;
+}
+
+.arabic-name {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  font-family: "Amiri", serif;
+}
+
+body.dark .arabic-name {
+  color: #ccc;
+}
+
+.surah-meta {
+  display: flex;
+  gap: 10px;
+}
+
+.meta-badge {
+  background: #f0f0f0;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  color: #666;
+}
+
+body.dark .meta-badge {
+  background: #3a3a4e;
+  color: #ccc;
+}
+
+.surah-arrow {
+  font-size: 1.2rem;
+  color: #2d6a4f;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.3s ease;
+}
+
+body.dark .surah-arrow {
+  color: #74c69d;
+}
+
+.surah-card:hover .surah-arrow {
+  opacity: 1;
+  transform: translateX(0);
+}

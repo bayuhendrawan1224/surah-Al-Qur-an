@@ -1,0 +1,89 @@
+.surah-list-container {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.search-section {
+  margin-bottom: 30px;
+}
+
+.search-box {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto 15px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 15px 45px 15px 45px;
+  font-size: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  background: white;
+  transition: all 0.3s ease;
+  color: #333;
+}
+
+body.dark .search-input {
+  background: #2a2a3e;
+  border-color: #3a3a4e;
+  color: white;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #2d6a4f;
+  box-shadow: 0 0 0 3px rgba(45, 106, 79, 0.1);
+}
+
+.clear-search {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #999;
+}
+
+.search-info {
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+body.dark .search-info {
+  color: #ccc;
+}
+
+.surah-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .surah-grid {
+    grid-template-columns: 1fr;
+  }
+}

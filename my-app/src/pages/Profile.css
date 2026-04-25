@@ -1,0 +1,162 @@
+.profile-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e5f4a 0%, #2d8659 100%);
+  padding: 80px 20px 40px;
+}
+
+body.dark .profile-page {
+  background: linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 100%);
+}
+
+.profile-card {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-out;
+}
+
+body.dark .profile-card {
+  background: #2a2a3e;
+}
+
+.profile-avatar {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.avatar-icon {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, #2d6a4f, #1b4332);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: white;
+}
+
+.profile-card h1 {
+  text-align: center;
+  color: #2d6a4f;
+  margin-bottom: 10px;
+}
+
+body.dark .profile-card h1 {
+  color: #74c69d;
+}
+
+.version {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+body.dark .version {
+  color: #ccc;
+}
+
+.profile-info {
+  background: #f5f7fa;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+body.dark .profile-info {
+  background: #1a1a2e;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+body.dark .info-item {
+  border-bottom-color: #3a3a4e;
+}
+
+.info-item:last-child {
+  border-bottom: none;
+}
+
+.info-label {
+  font-weight: bold;
+  color: #333;
+}
+
+body.dark .info-label {
+  color: #e0e0e0;
+}
+
+.info-value {
+  color: #666;
+}
+
+body.dark .info-value {
+  color: #ccc;
+}
+
+.about-section,
+.features-list {
+  margin-bottom: 30px;
+}
+
+.about-section h2,
+.features-list h2 {
+  color: #2d6a4f;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.dark .about-section h2,
+.dark .features-list h2 {
+  color: #74c69d;
+}
+
+.about-section p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.dark .about-section p {
+  color: #ccc;
+}
+
+.features-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features-list li {
+  color: #666;
+  padding: 8px 0;
+  font-size: 1rem;
+}
+
+.dark .features-list li {
+  color: #ccc;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-card {
+    padding: 25px;
+  }
+}
